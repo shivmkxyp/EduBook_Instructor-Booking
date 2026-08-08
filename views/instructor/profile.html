@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>EduBook - Instructor</h2>
+    <div class="nav-links">
+      <a href="/instructor/dashboard" class="btn btn-outline">Dashboard</a>
+      <a href="/instructor/availability" class="btn btn-outline">Availability</a>
+    </div>
+  </nav>
+
+  <div class="container" class="max-w-600">
+    <div class="card">
+      <h2 class="mb-2">Edit Profile</h2>
+      <form id="profileForm">
+        <div class="form-group">
+          <label>Bio</label>
+          <textarea id="bio" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Experience (Years)</label>
+          <input type="number" id="experience">
+        </div>
+        <div class="form-group">
+          <label>Languages (comma separated)</label>
+          <input type="text" id="languages">
+        </div>
+        <button type="submit" class="btn btn-primary">Save Profile</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/js/instructor/profile.js"></script>
+</body>
+</html>

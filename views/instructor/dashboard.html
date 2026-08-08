@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instructor Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>EduBook - Instructor</h2>
+    <div class="nav-links">
+      <a href="/instructor/profile" class="btn btn-outline">Edit Profile</a>
+      <a href="/instructor/availability" class="btn btn-outline">Availability</a>
+      <button onclick="localStorage.clear(); window.location.href='/';" class="btn btn-primary">Logout</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="mb-4">My Bookings</h1>
+    <div class="tabs-container">
+      <button onclick="setFilter('upcoming')" id="tab-upcoming" class="btn btn-outline tab-active">Upcoming</button>
+      <button onclick="setFilter('history')" id="tab-history" class="btn btn-outline tab-inactive">History</button>
+    </div>
+    <div class="grid grid-cols-3" id="bookingsList"></div>
+  </div>
+
+  <script src="/js/instructor/dashboard.js"></script>
+</body>
+</html>
